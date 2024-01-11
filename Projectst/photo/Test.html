@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <title>Home</title>
+</head>
+<body>
+       
+        <div class="container">
+            <div class="header">
+
+           
+            <nav class="menu">
+
+            <div class="logo">
+                <h2>PHOTOGRAPH</h2>
+            </div>
+
+            <ul>
+                <li><a href="Test.html" class="active" onclick="markMenuItem(this)">Home</a></li>
+                <li><a href="Myimaga.html"onclick="markMenuItem(this)">My Images</a></li>
+                <li><a href="Library.html"onclick="markMenuItem(this)">Library</a></li>
+                <li><a href="Login.html"onclick="markMenuItem(this)">Sign in</a></li>
+            </ul>
+
+                
+            </nav>
+          </div>
+            <main>
+                <section class="infoText">
+                    <p>Welcome</p>
+                    <h1>Share with us your Favorite Images! </h1>
+                    <button><a href="" class="Upload">Upload an Image</a></button>
+                    
+                </section>
+            </main>
+        </div>
+
+        <script type="text/javascript">
+
+            var menu_btn =document.querySelector('#menuBtn');
+            var menu = document.querySelector('.menu ul')
+            var menuItems =document.querySelectorAll('.menu ul li a');
+
+            menu_btn.addEventListener('click',function(){
+            menu_btn.classList.toggle('active');
+            menu.classList.toggle('active');
+
+            });
+            for(i=0; i< menuItems.length;i++){
+                menuItems[i].addEventListener('click', function(){
+                    menu_btn.classList.remove('active');
+                    menu.classList.remove('active');
+                }
+                )
+            }
+            function markMenuItem(menuItem){
+                for(var i=0; i< menuItems.length;i++){
+                    menuItems[i].classList.remove('active');
+                }
+                menuItem.classList.add('active');
+            }
+        </script>
+
+
+    
+</body>
+</html>

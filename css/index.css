@@ -1,0 +1,546 @@
+
+:root {
+    --main-color:#0000;
+    --text-color:#c3c0c4;
+}
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url(/Font/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family:Logo;
+    src: url(/Font/bartleen_script/Bartleen\ SANS.ttf);
+}
+
+body{
+font-family: PoppinsRegular;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 900;
+  color: white;
+}
+
+
+
+/* Start Navbar  */
+
+.navbar{
+background: black;
+}
+
+.navbar .navbar-nav .nav-item{
+
+    display: inline-table;
+    padding: 0px 10px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.navbar-nav .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color:#50C6F3;
+    top: 110%;
+    left: 0;
+    border-radius: 5px;
+    transition: 0.4s;
+    transform: scale(0);
+}
+
+
+.navbar-nav .nav-item .nav-link:hover::after{
+    transform: scale(1);
+
+}
+
+/* End Navbar  */
+
+
+
+
+
+
+/* Start Section hero   */
+.hero{
+    background: black;
+}
+
+
+.hero-img img{
+    margin-left: 100px;
+}
+
+
+
+.hero span {
+    color: #50C6F3;
+}
+
+.hero-text h1{
+    color: var(--text-color);
+  font-weight: 900;
+
+}
+
+.hero-text p{
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.hero .CV{
+    color: #dedede;
+    text-decoration: none;
+  }
+  
+
+  .btn {
+    border: 1px solid #79747b;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color:#000;
+    color: #c3c0c4;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  .btn:hover {
+    background:#50C6F3;
+  }
+
+/* End Section hero   */
+
+
+
+/* Start Section UI/UX  */
+
+.ui{
+    background: rgb(24, 24, 24);
+}
+
+
+/* End Section UI/UX  */
+
+
+
+/* Start Section Website  */
+
+.website{
+    background: #000;
+}
+
+.website .container-lg {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+ /* imga --------------------  */
+
+ #card-1 {
+  background-image: url(/img/pexels-vasanth-babu-797793.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ }
+
+
+
+
+ #card-2 {
+  background-image: url(/img/phto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+ }
+
+ #card-3 {
+  background-image: url(/img/telegram.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+ }
+
+.card {
+    background: #191919;
+    height:270px ;
+
+}
+
+
+
+
+.card:hover{
+    border: 3px #50C6F3 solid;
+    
+    }
+
+
+    .card h4{
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    /* End Section Website  */
+
+     /* Start Section about  */
+
+
+  .about{
+    background-color: #191919;
+  
+  }
+ 
+
+  .about img {
+    width: 80%;
+    
+  }
+
+  .about .container-lg {
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+
+  .about h2 {
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    margin-right: 19%;
+  }
+
+
+ 
+  
+
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .about .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: #34b7a7;
+  }
+
+  .about a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about span{
+    color: #50C6F3;
+  }
+
+  .about p{
+    color: white;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  
+  }
+    /* End Section about 
+
+
+
+
+
+/*--------------------------------------------------------------
+# My Resume
+--------------------------------------------------------------*/
+
+.resume{
+  background-color: #000;
+
+}
+
+.resume .resume-title {
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+.resume .resume-item {
+  color: rgb(199, 198, 198);
+}
+
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #82909c;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #50C6F3;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: rgb(49, 49, 49);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #82909c;
+  }
+
+
+
+
+  /* Start Content  */
+
+.contact {
+  background-color: #191919;
+
+}
+
+  .contact .info {
+    width: 100%;
+    background-color: #191919;
+    margin-top: -53px;
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    color: rgb(0 154 255);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(184, 184, 184);
+  }
+
+
+  .contact .info a {
+    text-decoration: none;
+    color: white;
+    padding: 0 0 0 10px;
+
+  }
+  
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .contact .info .email,
+  .contact .info .phone,
+  .contact .info .linkedin
+  {
+    margin-top: 40px;
+  }
+  
+  .contact .info .email:hover i,
+  .contact .info .address:hover i,
+  .contact .info .phone:hover i ,
+  .contact .info .linkedin:hover i {
+    background: #50C6F3;
+    color: #fff;
+  }
+  
+  .contact .php-email-form {
+    width: 100%;
+    background: #191919;
+  }
+  
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+
+  
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    background: rgb(0 154 255);
+    border: 0;
+    padding: 10px 30px 12px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+    background:  rgb(0 154 255);
+  }
+  
+
+
+
+    /* End Content  */
+
+
+
+  /* Start footer  */
+
+    #footer {
+      background: #000;
+      padding: 30px 0;
+      color: var(--text-color);
+      font-size: 14px;
+      text-align: center;
+    }
+    
+  /* End footer  */
+
+
+
+
+
+    @media (max-width: 390px) { 
+
+      .hero-text h1{
+        font-size: 25px;
+    
+    }
+
+    .hero-text p{
+      font-size: 14px;
+    }
+
+    .btn {
+      border: 1px solid #79747b;
+      border-radius: 20px;
+      outline: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      background-color:#000;
+      color: #c3c0c4;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
+    
+    .btn:hover {
+      background:#50C6F3;
+    }
+
+    .hero-text{
+      margin-top: 30px;
+    }
+
+    h2{
+      font-size: 25px ;
+    }
+
+    .about h2 {
+      font-size: 25px ;
+    }
+
+    .about .content h3 {
+      font-size:20px;
+    }
+    
+
+    .about span {
+      font-size:20px;
+    }
+
+    .about p{
+      font-size: 15px ;
+    }
+
+
+    .resume p{
+      font-size: 15px;
+    }
+
+    }
